@@ -48,6 +48,13 @@ class phoneSortComparator implements Comparator<UserFrame> {
 
     }
 }
+class nameSortComparator implements Comparator<UserFrame>{
+    @Override
+    public int compare(UserFrame o1, UserFrame o2) {
+        return o1.getName().compareTo(o2.getName());
+
+    }
+}
 
 public class MainFrame implements ActionListener {
     JTextField name;
